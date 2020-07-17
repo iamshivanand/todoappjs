@@ -1,0 +1,142 @@
+body{
+    background-color: gray;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+#main-container{
+    display: inline-block;
+    max-width: 500px;
+    max-height: 510px;
+    min-width: 400px;
+    min-height: 400px;
+    height: 73vh;
+    width: 70vw;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px;
+    
+}
+#upper-most-div{
+    height: 27%;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    display: block;
+    text-align: center;
+}
+#add-todo-textarea-container{
+    display: inline-block;
+    margin-top: 2%;
+    text-align: center;
+    height: 70%;
+    width: 92%;
+    border-radius: 10px;
+    /* border: 1px solid black; */
+    /* box-shadow: lightgrey 4px 4px 4px;  */
+    background-color: white;
+    
+    
+}
+
+#add-todo{
+    height: 80%;
+    width: 90%;
+    margin-top: 2%;
+    color: rgb(201, 197, 197);
+    border:none;
+    font-size: 1.5rem;
+    padding: 10px; 
+   
+}
+::placeholder {
+
+    opacity: 0.4;
+  }
+.icon { 
+    padding: 10px; 
+    color: black; 
+    
+    
+} 
+#description-div{
+    margin: 1px 5px 2px 2px;
+}
+#all-tasks{
+    float: left;
+    margin: 1px 2px 2px 2px;
+}
+#clear-complete{
+    float: right;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* border-radius: 5px; */
+    
+}
+#clear-complete:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    transition: 0.8s;
+}
+
+#task-container{
+    text-align: start;
+    height: 63%;
+    width: 100%;
+}
+#task-container > ul{
+    list-style-type: none;
+}
+
+ul li:hover{
+    cursor: pointer;
+    background-color: lightgrey;
+    transition: 0.6s;
+}
+
+/* all the information regarding the lower most div  */
+#lower-div{
+    bottom: 0px;
+    height: 20%;
+    width: 100%;
+    border-top: 1px solid lightgrey;  
+}
+/* this handles the css oof no of task span */
+#no-of-task{
+    margin: 1px 2px 2px 2px;
+    float: left;
+}
+/* navigation for all incomplete and complete tasks */
+#navigation-to-type-of-task{
+    margin: 1px 2px 2px 2px;
+    float: right;
+}
+
+/* all the instructions applied on the class button */
+.button{
+    border: none;
+}
+.button:hover{
+    background-color: seagreen;
+    color: whitesmoke;
+    transition: 0.8s;
+
+}
+/* all the instructions for the close button */
+.close{
+    padding: 10px;
+    float: right;
+}
+.close:hover{
+    background-color: red;
+    color: white;
+    transition: ease-in-out 1s;
+}
+/* checked class */
+.checked{
+    background-color: darkgrey;
+}
+.checked .checkbox{
+    font-weight: bolder;
+}

@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <tittle></tittle>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://kit.fontawesome.com/cadcfbd94b.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div id="main-container">
+            <div id="upper-most-div">
+                <div id="add-todo-textarea-container">
+                <form>
+                    <i class="far fa-file-alt icon"></i>
+                
+                   <input id="add-todo" type="text" name="todo" placeholder="Type Your Todo List.." required>
+                   <input id="submit" type="submit" style="height: 0px; width: 0px; border: none; padding: 0px; margin: 0px;"
+                </form>
+                </div>
+                <div id="description-div">
+                    <span id="all-tasks"><i class="fas fa-check-double icon"></i>Complete all tasks</span>
+                    <span id="clear-complete">Clear Completed</span>
+                </div>
+            </div>
+            <div id="task-container">
+                <ul id="task-list">
+                   <li><span><i class="far fa-circle icon checkbox"></i></span>Wake up at 5 am <span class="close"><i class="far fa-times-circle"></i></span></li>
+                   <li><span><i class="far fa-circle icon checkbox"></i></span>Exercise <span class="close"><i class="far fa-times-circle"></i></span></li>
+                   <li class="checked"><span><i class="far fa-circle icon checkbox"></i></span>Meditate <span class="close"><i class="far fa-times-circle"></i></span></li>
+                   <li><span><i class="far fa-circle icon checkbox"></i></span>Learn how to use vue.js <span class="close"><i class="far fa-times-circle"></i></span></li>
+                    
+                </ul>
+            </div>
+            <div id="lower-div">
+                <span id="no-of-task">No Task</span>
+                <div id="navigation-to-type-of-task">
+                    <button id="all" class="button">All</button>
+                    <button id="incomplete" class="button">Incomplete</button>
+                    <button id="complete" class="button">Complete</button>
+                </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
